@@ -7,6 +7,26 @@
     <version>1.4.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <name>COMBO</name>
+    <description>COMBO aims to offer powerful string substitutions without the complexity of a fully-fledged templating engine</description>
+    <url>https://github.com/glispa/combo</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Vincent Maurin</name>
+            <email>vincent.maurin@glispamedia.com</email>
+            <organization>Glispa</organization>
+            <organizationUrl>http://www.glispa.com</organizationUrl>
+        </developer>
+    </developers>
+
     <scm>
         <connection>scm:git:https://github.com/glispa/combo.git</connection>
         <developerConnection>scm:git:https://github.com/glispa/combo.git</developerConnection>
