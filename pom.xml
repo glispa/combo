@@ -9,8 +9,8 @@
     <packaging>pom</packaging>
 
     <scm>
-        <connection>scm:git:git@github.com:glispa/combo.git</connection>
-        <developerConnection>scm:git:git@github.com:glispa/combo.git</developerConnection>
+        <connection>scm:git:https://github.com/glispa/combo.git</connection>
+        <developerConnection>scm:git:https://github.com/glispa/combo.git</developerConnection>
         <url>https://github.com/glispa/combo</url>
         <tag>HEAD</tag>
     </scm>
