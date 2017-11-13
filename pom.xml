@@ -4,14 +4,14 @@
 
     <groupId>com.glispa.combo</groupId>
     <artifactId>combo</artifactId>
-    <version>1.4.0</version>
+    <version>1.4.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <scm>
         <connection>scm:git:https://github.com/glispa/combo.git</connection>
         <developerConnection>scm:git:https://github.com/glispa/combo.git</developerConnection>
         <url>https://github.com/glispa/combo</url>
-        <tag>1.4.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <properties>
