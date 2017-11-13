@@ -13,6 +13,7 @@ public interface MacroFactory<S> {
      * the macro keyword is encountered.
      *
      * @param args the list of arguments passed to the macro, never null
+     * @return the newly built macro
      */
     Macro<S> build(String[] args);
 }
