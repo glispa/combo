@@ -68,7 +68,7 @@ Add the following dependency to your project
 <dependency>
     <groupId>com.glispa.combo</groupId>
     <artifactId>combo-core</artifactId>
-    <version>1.3.2</version>
+    <version>1.4.1</version>
 </dependency>
 
 ```
@@ -79,7 +79,7 @@ and implement your own Macro/MacroRegistry or directly use the sample project fo
 <dependency>
     <groupId>com.glispa.combo</groupId>
     <artifactId>combo-url</artifactId>
-    <version>1.3.2</version>
+    <version>1.4.1</version>
 </dependency>
 
 ```
