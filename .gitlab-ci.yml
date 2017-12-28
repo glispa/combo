@@ -1,0 +1,39 @@
+image: gitlab-registry.glispa.com/java/maven-builder
+ 
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - .repository/
+
+.maven_verify: &maven_verify
+  coverage: '/^Coverage:(.+)$/'
+
+maven_verify:
+  <<: *maven_verify
+  stage: build
+  script:
+    - mvn -B -P integration verify sonar:sonar -Dsonar.analysis.mode=preview -Dsonar.gitlab.commit_sha=$CI_COMMIT_SHA -Dsonar.gitlab.ref_name=$CI_COMMIT_REF_NAME -Dsonar.gitlab.project_id=$CI_PROJECT_ID
+    - jacoco-coverage
+  except:
+    - master
+    - tags
+
+maven_verify_master:
+  <<: *maven_verify
+  stage: build
+  script:
+    - mvn -B verify sonar:sonar
+    - jacoco-coverage
+  only:
+    - master
+
+maven_deploy:
+  stage: deploy
+  script:
+    - mvn -B javadoc:jar source:jar deploy
+  only:
+    - master
+    - tags
